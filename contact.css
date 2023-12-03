@@ -12,23 +12,23 @@ body{
   }
   
   @font-face{
-    font-family: "Manrope";
-    src:local('Manrope'), 
-    url("Image/Manrope-VariableFont_wght.ttf") format('truetype');
+    font-family: "DancingScript";
+    src:local('DancingScript'), 
+    url("Image/DancingScript-VariableFont_wght.ttf") format('truetype');
 
   }
 
 .brand-name ,.navbar-light .navbar-brand{
       /* font-family: "Brush Script MT"; */
       /* margin-bottom: 3px; */
-      font-family: "Manrope";
+      font-family: "DancingScript";
       font-size: 50px;
       font-weight: bold;
       color: #351458;
   }
   @media only screen and (max-width : 764px){
       .brand-name ,.navbar-light .navbar-brand{
-      font-family: "Manrope";
+      font-family: "DancingScript";
       font-size: 40px;
       font-weight: bold;
       color: #351458;

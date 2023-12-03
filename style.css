@@ -5,6 +5,8 @@ body{
   }
 .body_section{
     padding : 3% 5% 1%;
+    
+    
 }
 
 p{
@@ -16,16 +18,18 @@ p{
   }
 
   @font-face{
-    font-family: "Manrope";
-    src:local('Manrope'), 
-    url("Image/Manrope-VariableFont_wght.ttf") format('truetype');
+    font-family: "DancingScript";
+    src:local('DancingScript'), 
+    url("Image/DancingScript-VariableFont_wght.ttf") format('truetype');
 
   }
 
 .brand-name ,.navbar-light .navbar-brand{
       /* font-family: "Brush Script MT"; */
       /* margin-bottom: 3px; */
-      font-family: "Manrope";
+      font-family: 'DancingScript', sans-serif;
+
+      
       font-size: 50px;
       font-weight: bold;
       color: #351458;
@@ -77,7 +81,8 @@ span.wave {
     right:0;
 }
 .boyimage{
-  height: 400px;
+  height: 600px;
+  padding-bottom: 25%;
 }
 
 @media only screen and (max-width : 1183px){
@@ -233,6 +238,11 @@ span.wave {
       display: inline;
       padding: 0%;
   }
+  .c{
+    width: 20%;
+    height: 20%;
+    padding-bottom: 7%;
+  }
 
 
   .numpy{
@@ -276,7 +286,7 @@ span.wave {
       .brand-name ,.navbar-light .navbar-brand{
       /* font-family: "Brush Script MT"; */
       /* margin-bottom: 3px; */
-      font-family: "Manrope";
+      font-family: "DancingScript";
       font-size: 40px;
       font-weight: bold;
       color: #351458;
@@ -325,4 +335,22 @@ footer{
   padding-top: 2%;
   color: #868e96;
   text-align: center;
+}
+
+
+.typing {
+  text-align: left;
+  font-size: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(22), blink 1s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 10em }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
 }

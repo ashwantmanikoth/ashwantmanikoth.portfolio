@@ -11,24 +11,24 @@ body{
     text-decoration: none;
   }
   
-   @font-face{
-    font-family: "Manrope";
-    src:local('Manrope'), 
-    url("Image/Manrope-VariableFont_wght.ttf") format('truetype');
-
+  @font-face{
+    font-family: "DancingScript";
+    src:local('DancingScript'), 
+    url("Image/DancingScript-VariableFont_wght.ttf") format('truetype');
   }
+
 
 .brand-name ,.navbar-light .navbar-brand{
       /* font-family: "Brush Script MT"; */
       /* margin-bottom: 3px; */
-      font-family: "Manrope";
+      font-family: "DancingScript";
       font-size: 50px;
       font-weight: bold;
       color: #351458;
   }
   @media only screen and (max-width : 764px){
       .brand-name ,.navbar-light .navbar-brand{
-      font-family: "Manrope";
+      font-family: "DancingScript";
       font-size: 40px;
       font-weight: bold;
       color: #351458;
@@ -42,7 +42,7 @@ body{
   }
   
   .headerachor:hover {
-    background-color: #f1f1f1;
+    background-color: #f7f4f4;
   }
  
 
@@ -95,7 +95,7 @@ body{
     content:'';
     width:4px;
     height:calc(100% - 150px);
-    background: #6F67FF;
+    background: #ff678d;
     left:14px;
     top:5px;
     border-radius:4px;
@@ -105,7 +105,7 @@ body{
     color:black;
     position:relative;
     padding:4px 15px 4px 35px;
-    background-color:#a6a1ff;
+    background-color:#ff70ac;
     display:inline-block;
     width:auto;
     border-radius:40px;
@@ -149,21 +149,17 @@ body{
   
   .timeline-date{
     margin-bottom:15px;
-    padding:2px 15px;
-    background:#a6a1ff;
-    position:relative;
-    display:inline-block;
-    border-radius:20px;
-    border:1px solid #17191B;
-    color:black;
-  text-shadow:1px 1px 1px rgba(0,0,0,0.3);
+    padding:2px 25px;
+    background:#ffffff;
+    font-family:'Courier New', Courier, monospace;
+
   }
   .timeline-section:before{
     content:'';
     position:absolute;
     width:30px;
     height:1px;
-    background-color:#362CFF;
+    background-color:#ffbc2c;
     top:12px;
     left:20px;
   }
@@ -185,7 +181,18 @@ body{
   .timeline-box{
     position:relative;
     color:black;
-    background-color:#a6a1ff;
+    background-color:#ff7070;
+    border-radius:15px;
+    border-top-left-radius:0px;
+    border-bottom-right-radius:0px;
+    border:1px solid #17191B;
+    transition:all 0.3s ease;
+    overflow:hidden;
+  }
+  .timeline-work{
+    position:relative;
+    color:black;
+    background-color:#F5F5F5;
     border-radius:15px;
     border-top-left-radius:0px;
     border-bottom-right-radius:0px;
@@ -207,7 +214,8 @@ body{
   }
 
   .degree{
-      font-size: 15px;
+      font-size: 25px;
+
   }
  
   
