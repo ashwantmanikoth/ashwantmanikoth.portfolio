@@ -198,6 +198,9 @@ span.wave {
       font-family: "Montserrat";
       font-weight: 300;
   }
+  .feature-fullstack{
+    padding-top: 250px;
+  }
 
   .Feature-first-image{
       padding : 0 2% 10%;
@@ -260,8 +263,11 @@ span.wave {
   }
 
   .Features-paragraph{
+    padding-top: 50px;
       margin-top : 8px;
       margin-bottom: 8px;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+      
   }
 
   @media only screen and (max-width : 764px){
