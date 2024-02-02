@@ -1,151 +1,84 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Ashwant's Portfolio</title>
-  <link rel="icon" href="Image/engineer.ico">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  <script>
-      function typeWriter(text, i, fnCallback) {
-        if (i < (text.length)) {
-          document.querySelector("#typing-text").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwant's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
 
-          setTimeout(function() {
-            typeWriter(text, i + 1, fnCallback)
-          }, 100);
+        nav ul {
+            list-style-type: none;
+            padding: 0;
         }
-        else if (typeof fnCallback == 'function') {
-          setTimeout(fnCallback, 700);
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
         }
-      }
-    </script>
+
+        h1 {
+            font-family: 'Cursive', sans-serif;
+            font-size: 2em;
+            color: #555;
+            border-right: .05em solid;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+        }
+
+        /* Typing effect */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        /* Cursor animations */
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: black; }
+        }
+    </style>
 </head>
-<body class="container-fluid body_section">
-        <header>
-              <nav class="navbar navbar-expand-lg navbar-light ">
-                <a class="navbar-brand brand-name" href="#">Ashwant Manikoth</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="Education.html">Education</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="skill.html">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="Project.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="contact.html">Contact Me</a>
-                    </li>
-                  </ul>
-              </nav>
-          </header>
+<body>
+    <h1 id="typing"></h1>
 
-          <section id = "Home">
-              <div class="row column1">
-                <div class="col-lg-6 col-md-6 first-image">
-                    <img class = "boyimage" src="/Image/20200630_162659.gif" alt="">
-                </div>  
-                  <div class="col-lg-6 section-1">
-                      <h1 class = "typing">Hi there  ! I'm Ashwant <span class="wave">👋</span></h1>
-                      <p>A Software Developer with passionate interest in Cyber Security</p>
-                          <div class=social_media_icon>
-                            <a class="btn" href="https://www.linkedin.com/in/ashwant-manikoth/" target=_blank>
-                              <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                            <a class="btn" href="https://github.com/ashwantmanikoth" target=_blank>
-                              <i class="fab fa-github"></i>
-                            </a>
-                            <a class="btn" href="mailto:ashwantmanikoth@gmail.com" target=_blank>
-                              <i class="fab fa-google"></i>
-                            </a>
-                          </div>
-                  </div>
-                  <div class="Image-boy col-lg-6"><img class="boy" src="Image/Boy-image.png" alt=""></div>
-              </div>
-          </section>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+        </ul>
+    </nav>
 
+    <script>
+        const text = "Hi, it's me Ashwant...";
+        let index = 0;
 
-          <section id=Whatido>
-            <h1>What I Do ?</h1>
-              <div class = "row feature-1">
-                  <div class="col-lg-6 col-md-6 Feature-first-image ">
-                    <img class = "Feature-svg-image" src="Image/Data_Analysis.svg" alt="">
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <h1 class= "Feature-Heading feature-fullstack" >Full Stack Development</h1>
-                    <ul class = "dev-icon" >
-                      <li><i class="fab fa-java fa-6x fa-fade" style="color:#000207,;"></i></li>
-                      <li><i class="fab fa-python fa-5x fa-spacing fa-fade" style="color:#000000"></i></li>
-                      <li><i class="fa-regular fa-c fa-5x fa-spacing fa-fade"  style="color:#000000"></i></li>
-                    </li>
-                      
-                      
-                    </ul>
-                    <div class = "Data-Analytic">
-                      <p class ="Features-paragraph ">
-                         Proficient in Java, Python and C, I specialize in developing scalable, innovative, and high performance software solutions, adeptly tackling diverse challenges across various domains.</p>
-                         <p class ="Features-paragraph ">
-                          Skilled in RESTful API implementation, database optimization with PostgreSQL, and cloud deployments using AWS, Docker, and Kubernetes, I excel in creating scalable, efficient web applications tailored to project needs.</p>
-                </div>
-              </div>
-              <div class="row feature-2">
-                <div class="col-lg-6 col-md-6 feature-web">
-                  <h1 class="Feature-Heading">Web Development</h1>
-                  <ul class = "dev-icon">
-                    <li><i class="fab fa-html5 fa-5x" style="color:#e34f26"></i></li>
-                    <li><i class="fab fa-css3-alt fa-5x" style="color:#1572b6"></i></li>
-                    <li><i class="fab fa-bootstrap fa-5x" style="color:#543b79"></i></li>
-                    <li><i class="fab fa-js-square fa-5x" style="color:#f7df1e"></i></li>
-                    <li><i class="fab fa-react fa-5x" style="color:#61dafb"></i></li>
-                    <li><i class="fab fa-node fa-5x" style="color:#679e63"></i></li>
-                  </ul>
-                  <div class = "Data-Analytic">
-                    <p class ="Features-paragraph">
-                      My expertise includes a deep understanding of JavaScript, Angular, and responsive web design, allowing me to craft intuitive and dynamic user interfaces. My ability to leverage modern front-end technologies ensures visually appealing and user-friendly web applications, enhancing user engagement and satisfaction.                    <p  class ="Features-paragraph">
-                </div>
-                <div class="col-lg-6 col-md-6 Feature-second-image ">
-                  <img class = "Feature-svg-image" src="Image/website.svg" alt="">
-                </div>
-              </div>
-              <div class="row feature-3">
-                <div class = "col-lg-6 col-md-6 Feature-third-image">
-                    <img class = "Feature-svg-image-3" src="Image/Coding.svg" alt="">
-                  </div>
-                  <div class="col-lg-6 col-md-6 feature-coding">
-                    <h1 class="Feature-Heading">Data Structure and Algorithms</h1>
-                    <ul class = "dev-icon">
-                     <li><i class="fas fa-laptop-code fa-4x"></i></li>
-                     <li><i class="fas fa-file-code fa-4x" style="color: #000000;"></i></li>
-                    </ul>
-                    <div class = "Data-Analytic">
-                      <p class ="Features-paragraph">
-                        My proficiency in data structures and system design enables me to craft efficient, high-quality code that adheres to best practices and standards, with a focus on long-term sustainability. This expertise ensures that my contributions not only meet immediate project goals but also lay a solid foundation for future scalability and maintenance, reflecting the foresight and technical rigor expected of a senior software developer.
-                         </p>
-                  </div>
-              </div>
-               
-        
-          </section>
-    
+        function typeEffect() {
+            if (index < text.length) {
+                document.getElementById("typing").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, 150); // Adjust for speed
+            }
+        }
+
+        window.onload = function() {
+            typeEffect();
+        };
+    </script>
 </body>
 </html>
