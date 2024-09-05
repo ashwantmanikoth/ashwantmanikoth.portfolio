@@ -1,0 +1,106 @@
+{
+  "main": {
+    "name": "Ashwant Manikoth",
+    "occupation": "A Full Stack Developer",
+    "description": "        Ex Zoho Developer, SIEM expert, Microservices and Distributed service developer",
+    "image": "profilepic.jpg",
+    "bio": "I'm a Full Stack Engineer with over 5 years of experience in developing and optimizing high-scale systems. I specialize in Java, Spring, React, TypeScript, and Python, and have extensive experience with Docker, Redis, and microservice architectures. I'm passionate about leading technical initiatives, enhancing system performance, and tackling complex challenges. I thrive in dynamic environments and enjoy collaborating with cross-functional teams to deliver impactful solutions.",
+    "contactmessage": "",
+    "email": "ashwantmanikoth@gmail.com",
+    "phone": "+506 2823619",
+    "address": {
+      "street": "Boyne court",
+      "city": "Fredericton",
+      "state": "New Brunswick",
+      "zip": "",
+      "country":"Canada"
+    },
+    "website": "",
+    "resumedownload": "",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/ashwant-manikoth/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/ashwantmanikoth",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "education": [
+      {
+        "school": "University of New Brunswick",
+        "degree": "Masters's Degree, Computer Science",
+        "graduated": "May 2024",
+        "description": "Graduated with First Class and completion of two Co-op Work Terms"
+      }
+    ],
+    "work": [
+      {
+        "company": "Greater Fredericton Social Innovation",
+        "title": "Software Engineer",
+        "years": "June 2023 - Present",
+        "description": ""
+      },
+      {
+        "company": "Zoho Corporation pvt ltd",
+        "title": "Memeber Technical Staff- Software Developer",
+        "years": "August 2019 - August 2022",
+        "description": ""
+      }
+    ],
+    "skillmessage": "My Programming Language Proficiency",
+
+    "skills": [
+      {
+        "name": "React",
+        "level": "100%"
+      },
+      {
+        "name": "Python",
+        "level": "85%"
+      },
+      {
+        "name": "Java",
+        "level": "100%"
+      },
+      {
+        "name": "Spring",
+        "level": "85%"
+      },
+      {
+        "name": "Git",
+        "level": "70%"
+      },
+      {
+        "name": "JavaScript",
+        "level": "99%"
+      },
+      {
+        "name": "Web Development",
+        "level": "95%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "I wholeheartedly endorse Ashwant Manikoth for his outstanding programming and logical skills.  His exceptional abilities have consistently amazed me, and his contributions within a team setting are truly invaluable. Ashwant's dedication and unwavering work ethic are evident in every task he undertakes, always striving to deliver work of the utmost quality. What impresses me most is his relentless pursuit of self-improvement and his eagerness to embrace new challenges. Without a doubt, Ashwant would be an exceptional addition to any team, bringing immense value and expertise.",
+        "user": "Hashmim NA,  Google TLM"
+      },
+      {
+        "text": "I'm delighted to recommend Ashwant for full-stack software developer positions. His proficiency in both front-end and back-end development, coupled with his proactive approach and strong problem-solving skills, make him an excellent fit for any team. He consistently delivers high-quality solutions and would be a valuable addition to any project.",
+        "user": "Kate Walsh, Project Coordinator "
+      }
+    ]
+  }
+}
