@@ -1,10 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Contact = ({ data }) => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
 
   if (data) {
     var contactName = data.name;
@@ -17,16 +13,6 @@ const Contact = ({ data }) => {
     var contactEmail = data.email;
     var contactMessage = data.contactmessage;
   }
-
-  // const submitForm = () => {
-  //   window.open(
-  //     `mailto:${contactEmail}?subject=${encodeURIComponent(
-  //       subject
-  //     )}&body=${encodeURIComponent(name)} (${encodeURIComponent(
-  //       email
-  //     )}): ${encodeURIComponent(message)}`
-  //   );
-  // };
 
   return (
     <section id="contact">
