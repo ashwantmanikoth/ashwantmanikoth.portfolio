@@ -22,6 +22,7 @@ e. Others
 
 =====================================================================  */
 
+
 /* ------------------------------------------------------------------ */
 /* a. Webfonts and Icon fonts
  ------------------------------------------------------------------ */
@@ -37,6 +38,66 @@ e. Others
       HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/
 /* ------------------------------------------------------------------ */
 
+
+/* Theme Switcher */
+:root {
+   /* Default dark theme */
+   --background-color: #0f0f0f;
+   --header-bg-color: #161415;
+   --text-color: #ffffff;
+   --header-text-color: #000000;
+   --header-tint-color: rgba(255, 255, 255, 0.2);
+   --link-color: #11abb0;
+   --link-hover-color: #11abb0;
+   --border-color: #e8e8e8;
+   --button-bg-color: #444;
+   --button-hover-bg-color: #ffffff;
+   --button-hover-text-color: #2b2b2b;
+
+   --bars-bg-color: #fff;
+   --bars-text-color: #f5f5f5;
+
+
+   --portfolio-bg-color: #000;
+   --portfolio-text-color: #fff;
+   --testimonial-bg-color: #1f1f1f;
+   --testimonial-text-color: #ffffff;
+   --contact-bg-color: #191919;
+   --contact-text-color: #ebeeee;
+   --footer-bg-color: #303030;
+   --footer-text-color: #ffffff;
+   --footer-link-color: #525252;
+ }
+ 
+ .light-mode {
+   /* Light theme */
+   --background-color: #ffffff;
+   --header-bg-color: #f5f5f5;
+   --text-color: #000000;
+   --header-text-color: #ffffff;
+   --header-tint-color: rgba(0, 0, 0, 0.1);
+   --link-color: #f06000;
+   --link-hover-color: #f06000;
+   --border-color: #cccccc;
+   --button-bg-color: #dddddd;
+   --button-hover-bg-color: #000000;
+   --button-hover-text-color: #ffffff;
+
+   --bars-bg-color: #000;
+   --bars-text-color: #cccccc;
+
+   --portfolio-bg-color: #ffffff;
+   --portfolio-text-color: #000;
+   --testimonial-bg-color: #f0f0f0;
+   --testimonial-text-color: #000000;
+   --contact-bg-color: #f9f9f9;
+   --contact-text-color: #000000;
+   --footer-bg-color: #f5f5f5;
+   --footer-text-color: #000000;
+   --footer-link-color: #333333;
+ }
+
+ 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -87,7 +148,7 @@ pre {
    word-wrap: break-word;
 }
 
-blockquote, q { quotes: &#8220 &#8220; }
+blockquote, q { quotes: #8220 #8220; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -142,13 +203,12 @@ html {
 }
 
 body {
-   background: #fff;
+   background:var(--background-color);
    font-family: 'opensans-regular', sans-serif;
    font-weight: normal;
    font-size: 15px;
    line-height: 30px;
-	color: #838C95;
-
+	color: var(--text-color);
    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
 }

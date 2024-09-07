@@ -1,5 +1,6 @@
 import React from "react";
 import TypeWriter from "react-typewriter";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const Header = ({ data }) => {
   if (data) {
@@ -60,6 +61,7 @@ const Header = ({ data }) => {
             </a>
           </li>
         </ul>
+        <ThemeSwitcher/>
       </nav>
 
       <div className="row banner">
@@ -67,10 +69,10 @@ const Header = ({ data }) => {
           <h1 className="responsive-headline">
             <TypeWriter typing={1.3}>{name ? `I'm ${name}.` : null}</TypeWriter>
           </h1>
-          <h3>
-            Based in {country}. <span>{occupation}</span>. 
-            {description}
-          </h3>
+          <h2>
+            <span>{occupation} from  {country}</span>
+          </h2>
+          <h3>{description}</h3>
           <hr />
           <ul className="social">{networks}</ul>
         </div>

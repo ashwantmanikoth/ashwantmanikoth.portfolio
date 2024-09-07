@@ -1,7 +1,12 @@
 import React from "react";
 
+
+
 const Footer = ({ data }) => {
+
+
   if (data) {
+    var name =data.name;
     var networks = data.social.map(function (network) {
       return (
         <li key={network.name}>
@@ -23,7 +28,7 @@ const Footer = ({ data }) => {
             <li>
               Made by{" "}
               <a title="Go up" href="/#home">
-                Ashwant
+                {name}
               </a>
             </li>
           </ul>

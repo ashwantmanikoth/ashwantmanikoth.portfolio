@@ -1,5 +1,5 @@
 import React from "react";
-
+// import Tech from "./Tech";
 const Portfolio = ({ data }) => {
   if (data) {
    data.projects.map(function (projects) {
@@ -15,9 +15,9 @@ const Portfolio = ({ data }) => {
                   <p>{projects.category}</p>
                 </div>
               </div>
-              <div className="link-icon">
+              {/* <div className="link-icon">
                 <i className="fa fa-link"></i>
-              </div>
+              </div> */}
             </a>
           </div>
         </div>
@@ -30,7 +30,6 @@ const Portfolio = ({ data }) => {
       <div className="row">
         {/* <div className="twelve columns collapsed">
           <h1>Check Out Some of My Works.</h1>
-
           <div
             id="portfolio-wrapper"
             className="bgrid-quarters s-bgrid-thirds cf"
